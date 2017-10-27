@@ -1,0 +1,35 @@
+{
+  "name"        : "STARTER API",
+  "script"      : "./src/index.js",
+  "watch"       : true,
+  "ignore_watch": [".DS_Store", "*.md", "logs", "./public/uploads", "./src/samples"],
+  "interpreter" : "./node_modules/babel-cli/bin/babel-node.js",
+  "env": {
+    "NODE_ENV": "dev",
+    "config": {
+      "env": "dev",
+      "port": 3000,
+      "locale": {
+        "default": "en_US",
+        "all": ["en_US", "fr_FR"]
+      },
+      "database": {
+        "dialect": "mysql",
+        "host": "127.0.0.1",
+        "username": "",
+        "password": "",
+        "database": ""
+      },
+      "mailer": {
+        "host": "smtp.ethereal.email",
+        "port": 587,
+        "secure": false,
+        "auth": {
+          "username": "",
+          "password": ""
+        },
+        "from": "\"John Doe\" <john.doe@email.com>"
+      }
+    }
+  }
+}
